@@ -2,7 +2,7 @@
   "name": "bbmc-math",
   "version": "1.0.0",
   "description": "BlueBirdMC Math lib",
-  "main": "index.js",
+  "main": "src/Math.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
