@@ -33,49 +33,49 @@ class Vector3 {
     /**
      * @returns {Vector3}
      */
-    static zero(){
+    static Zero() {
         return new Vector3(0, 0, 0);
     }
 
     /**
      * @returns {number}
      */
-    getX(){
+    getX() {
         return this.x;
     }
 
     /**
      * @returns {number}
      */
-    getY(){
+    getY() {
         return this.y;
     }
 
     /**
      * @returns {number}
      */
-    getZ(){
+    getZ() {
         return this.z;
     }
 
     /**
      * @returns {number}
      */
-    getFloorX(){
+    getFloorX() {
         return Math.floor(this.x);
     }
 
     /**
      * @returns {number}
      */
-    getFloorY(){
+    getFloorY() {
         return Math.floor(this.y);
     }
 
     /**
      * @returns {number}
      */
-    getFloorZ(){
+    getFloorZ() {
         return Math.floor(this.z);
     }
 
@@ -85,7 +85,7 @@ class Vector3 {
      * @param {number} z 
      * @returns {Vector3}
      */
-    add(x, y, z){
+    add(x, y, z) {
         return new Vector3(this.x + x, this.y + y, this.z + z);
     }
 
@@ -93,7 +93,7 @@ class Vector3 {
      * @param {Vector3} vector3 
      * @returns {Vector3}
      */
-    addVector(vector3){
+    addVector(vector3) {
         return this.add(vector3.x, vector3.y, vector3.z);
     }
 
@@ -103,7 +103,7 @@ class Vector3 {
      * @param {number} z 
      * @returns {Vector3}
      */
-    subtract(x, y, z){
+    subtract(x, y, z) {
         return this.add(-x, -y, -z);
     }
 
@@ -111,7 +111,7 @@ class Vector3 {
      * @param {Vector3} vector3 
      * @returns {Vector3}
      */
-    subtractVector(vector3){
+    subtractVector(vector3) {
         return this.add(vector3.x, vector3.y, vector3.z);
     }
 
@@ -120,7 +120,7 @@ class Vector3 {
      * @param {number} number 
      * @returns {Vector3}
      */
-    multiply(number){
+    multiply(number) {
         return new Vector3(this.x * number, this.y * number, this.z * number);
     }
 
@@ -129,21 +129,21 @@ class Vector3 {
      * @param {number} number 
      * @returns {Vector3}
      */
-    divide(number){
+    divide(number) {
         return new Vector3(this.x / number, this.y / number, this.z / number);
     }
 
     /**
      * @returns {Vector3}
      */
-    ceil(){
+    ceil() {
         return new Vector3(Math.ceil(this.x), Math.ceil(this.y), Math.ceil(this.z));
     }
 
     /**
      * @returns {Vector3}
      */
-    floor(){
+    floor() {
         return new Vector3(Math.floor(this.x), Math.floor(this.y), Math.floor(this.z));
     }
 
@@ -151,7 +151,7 @@ class Vector3 {
      * @param {Vector3} pos 
      * @returns {number}
      */
-    distance(pos){
+    distance(pos) {
         return Math.sqrt(this.distanceSquared(pos));
     }
 
@@ -159,7 +159,7 @@ class Vector3 {
      * @param {Vector3} pos 
      * @returns {number}
      */
-    distanceSquared(pos){
+    distanceSquared(pos) {
         return ((this.x - pos.x) ** 2) + ((this.y - pos.y) ** 2) + ((this.z - pos.z) ** 2);
     }
 }
